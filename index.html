@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>2026国庆·东京⇄大阪 7日深度游攻略</title>
+<meta name="description" content="2026年10月3日-8日 东京塔外景·多摩川花火·河口湖·京都和服东山·岚山 完整行程、住宿、预算全攻略">
+<style>
+  :root{
+    --bg:#0f1226;
+    --card:#171a35;
+    --card2:#1f2347;
+    --accent:#ff5e7e;
+    --accent2:#5e8bff;
+    --gold:#ffc75e;
+    --green:#4fd1a1;
+    --text:#eef1ff;
+    --muted:#a6abc9;
+    --line:rgba(255,255,255,.08);
+    --radius:16px;
+    --shadow:0 8px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:90px;
+  }
+  a{color:var(--accent2);text-decoration:none}
+  a:active{opacity:.7}
+  img{max-width:100%}
+
+  /* HERO */
+  .hero{
+    position:relative;
+    padding:54px 20px 40px;
+    text-align:center;
+    background:linear-gradient(160deg,#241b4d 0%,#171a35 55%,#0f1226 100%);
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(120px 120px at 20% 20%,rgba(94,139,255,.35),transparent 60%),
+      radial-gradient(140px 140px at 85% 15%,rgba(255,94,126,.30),transparent 60%),
+      radial-gradient(160px 160px at 60% 90%,rgba(255,199,94,.20),transparent 60%);
+    pointer-events:none;
+  }
+  .hero h1{
+    position:relative;
+    font-size:27px;margin:0 0 10px;letter-spacing:.5px;
+    background:linear-gradient(90deg,#ffc75e,#ff5e7e,#5e8bff);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    font-weight:800;
+  }
+  .hero .sub{position:relative;color:var(--muted);font-size:14px;margin-bottom:18px}
+  .hero .tags{position:relative;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+  .tag{
+    font-size:12px;padding:5px 11px;border-radius:999px;
+    background:rgba(255,255,255,.07);border:1px solid var(--line);color:var(--text);
+  }
+  .tag.hot{background:rgba(255,94,126,.15);border-color:rgba(255,94,126,.4);color:#ffb3c2}
+  .tag.cool{background:rgba(94,139,255,.15);border-color:rgba(94,139,255,.4);color:#b3c8ff}
+
+  /* QUICK FACTS */
+  .facts{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:10px;
+    padding:18px 16px 4px;
+  }
+  .fact{
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:12px 14px;
+  }
+  .fact .k{font-size:12px;color:var(--muted)}
+  .fact .v{font-size:17px;font-weight:700;margin-top:2px}
+  .fact .v small{font-size:12px;color:var(--muted);font-weight:400}
+
+  /* SECTION */
+  .sec{padding:20px 16px 4px}
+  .sec-h{
+    display:flex;align-items:center;gap:10px;margin:8px 0 14px;
+  }
+  .sec-h .num{
+    flex:0 0 auto;width:30px;height:30px;border-radius:9px;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:15px;color:#0f1226;
+    background:linear-gradient(135deg,var(--gold),var(--accent));
+  }
+  .sec-h h2{font-size:19px;margin:0;font-weight:800}
+
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:16px;margin-bottom:14px;box-shadow:var(--shadow);
+  }
+  .card h3{margin:0 0 10px;font-size:16px;color:var(--gold);font-weight:700}
+  .card h4{margin:14px 0 6px;font-size:14px;color:var(--accent2);font-weight:700}
+  .card p{margin:8px 0;font-size:14px;color:var(--text)}
+  .card .muted{color:var(--muted)}
+
+  /* TABLE */
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:6px 0}
+  table{border-collapse:collapse;width:100%;font-size:13px;min-width:480px}
+  th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+  thead th{background:var(--card2);color:var(--gold);font-weight:700;position:sticky;top:0}
+  tbody tr:nth-child(even){background:rgba(255,255,255,.02)}
+  td .yen{color:var(--green);font-weight:700;white-space:nowrap}
+
+  /* TIMELINE */
+  .tl{position:relative;margin:8px 0 0;padding-left:20px}
+  .tl::before{content:"";position:absolute;left:6px;top:4px;bottom:4px;width:2px;background:linear-gradient(var(--accent),var(--accent2))}
+  .tl-item{position:relative;margin-bottom:14px}
+  .tl-item::before{
+    content:"";position:absolute;left:-17px;top:5px;width:10px;height:10px;border-radius:50%;
+    background:var(--accent);box-shadow:0 0 0 3px rgba(255,94,126,.25);
+  }
+  .tl-item .t{font-size:13px;font-weight:700;color:var(--gold)}
+  .tl-item .d{font-size:13.5px;color:var(--text);margin-top:1px}
+  .tl-item .m{font-size:12px;color:var(--muted)}
+
+  /* CALLOUT */
+  .note{
+    border-left:3px solid var(--gold);background:rgba(255,199,94,.08);
+    padding:10px 12px;border-radius:0 10px 10px 0;font-size:13.5px;margin:10px 0;
+  }
+  .warn{
+    border-left:3px solid var(--accent);background:rgba(255,94,126,.10);
+    padding:10px 12px;border-radius:0 10px 10px 0;font-size:13.5px;margin:10px 0;
+  }
+  .ok{
+    border-left:3px solid var(--green);background:rgba(79,209,161,.10);
+    padding:10px 12px;border-radius:0 10px 10px 0;font-size:13.5px;margin:10px 0;
+  }
+  .note b,.warn b,.ok b{color:#fff}
+
+  .quote{
+    background:var(--card2);border:1px dashed var(--line);border-radius:10px;
+    padding:10px 12px;font-size:13px;color:var(--muted);margin:8px 0;
+    font-style:italic;
+  }
+
+  /* HOTEL GRID */
+  .hotel{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+  .hotel:last-child{border-bottom:none}
+  .hotel .name{font-size:13.5px;font-weight:700}
+  .hotel .loc{font-size:12px;color:var(--muted);margin-top:2px}
+  .hotel .price{font-size:13px;color:var(--green);font-weight:700;white-space:nowrap;text-align:right}
+
+  /* DAY TABS */
+  .days{display:flex;gap:8px;overflow-x:auto;padding:6px 16px 4px;-webkit-overflow-scrolling:touch}
+  .day-btn{
+    flex:0 0 auto;padding:8px 14px;border-radius:999px;font-size:13px;font-weight:700;
+    background:var(--card);border:1px solid var(--line);color:var(--muted);cursor:pointer;
+  }
+  .day-btn.active{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border-color:transparent}
+
+  /* BUDGET HIGHLIGHT */
+  .budget-total{
+    text-align:center;padding:18px;margin:8px 0;
+    background:linear-gradient(135deg,rgba(255,94,126,.18),rgba(94,139,255,.18));
+    border:1px solid var(--line);border-radius:var(--radius);
+  }
+  .budget-total .big{font-size:26px;font-weight:800;color:var(--gold)}
+  .budget-total .lbl{font-size:12px;color:var(--muted);margin-top:2px}
+
+  /* CHECKLIST */
+  .chk{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}
+  .chk:last-child{border-bottom:none}
+  .chk .dot{flex:0 0 auto;width:8px;height:8px;border-radius:50%;margin-top:7px}
+  .dot.r{background:var(--accent)}.dot.o{background:var(--gold)}.dot.g{background:var(--green)}.dot.m{background:var(--muted)}
+  .chk .ct{flex:1}
+  .chk .ct .ti{font-size:14px;font-weight:700}
+  .chk .ct .de{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .lvl{font-size:11px;padding:2px 8px;border-radius:999px;font-weight:700;white-space:nowrap}
+  .lvl.high{background:rgba(255,94,126,.18);color:#ffb3c2}
+  .lvl.mid{background:rgba(255,199,94,.18);color:#ffe0a3}
+  .lvl.low{background:rgba(166,171,201,.18);color:#cfd3e8}
+
+  /* FOOTER + SHARE */
+  .footer{text-align:center;color:var(--muted);font-size:12px;padding:24px 16px}
+  .fab{
+    position:fixed;left:50%;bottom:18px;transform:translateX(-50%);
+    background:linear-gradient(135deg,var(--accent),var(--accent2));
+    color:#fff;border:none;border-radius:999px;padding:13px 26px;font-size:15px;font-weight:800;
+    box-shadow:0 10px 30px rgba(255,94,126,.4);cursor:pointer;display:flex;align-items:center;gap:8px;z-index:50;
+  }
+  .fab:active{transform:translateX(-50%) scale(.96)}
+
+  .share-sheet{
+    position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;
+    align-items:flex-end;justify-content:center;z-index:100;
+  }
+  .share-sheet.open{display:flex}
+  .sheet-box{
+    background:var(--card);width:100%;max-width:480px;border-radius:20px 20px 0 0;padding:20px 18px 28px;
+  }
+  .sheet-box h3{margin:0 0 4px;font-size:17px}
+  .sheet-box .desc{font-size:13px;color:var(--muted);margin-bottom:14px}
+  .share-row{display:flex;gap:10px;margin-bottom:12px}
+  .share-opt{
+    flex:1;border:1px solid var(--line);background:var(--card2);border-radius:12px;padding:12px;
+    text-align:center;font-size:13px;cursor:pointer;
+  }
+  .share-opt:active{opacity:.7}
+  .share-opt .ic{font-size:22px;margin-bottom:4px}
+  .link-box{display:flex;gap:8px;margin-top:6px}
+  .link-box input{
+    flex:1;background:var(--bg);border:1px solid var(--line);border-radius:10px;color:var(--text);
+    padding:11px 12px;font-size:13px;
+  }
+  .copy-btn{background:var(--accent2);color:#fff;border:none;border-radius:10px;padding:0 16px;font-weight:700;font-size:13px;cursor:pointer}
+  .copy-btn:active{opacity:.7}
+  .close-sheet{width:100%;margin-top:14px;background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:12px;padding:12px;font-size:14px;cursor:pointer}
+
+  .toast{
+    position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);
+    background:rgba(0,0,0,.85);color:#fff;padding:12px 20px;border-radius:12px;font-size:14px;
+    opacity:0;pointer-events:none;transition:opacity .25s;z-index:200;
+  }
+  .toast.show{opacity:1}
+
+  .legend{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--muted);margin:4px 0 10px}
+  .legend span{display:flex;align-items:center;gap:5px}
+  .legend .dot{margin:0}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>东京 ⇄ 大阪 7日深度游</h1>
+  <div class="sub">2026.10.3 凌晨抵东京 → 10.8 关西机场回港 · 两人同行</div>
+  <div class="tags">
+    <span class="tag hot">🗼 东京塔外景</span>
+    <span class="tag cool">🎆 多摩川花火</span>
+    <span class="tag">🏔️ 河口湖</span>
+    <span class="tag">👘 京都和服</span>
+    <span class="tag">🎋 岚山竹林</span>
+    <span class="tag">🍜 道顿堀</span>
+  </div>
+</header>
+
+<div class="facts">
+  <div class="fact"><div class="k">📅 旅行天数</div><div class="v">6天5晚</div></div>
+  <div class="fact"><div class="k">🏨 住宿城市</div><div class="v">东京3晚 <small>+ 大阪3晚</small></div></div>
+  <div class="fact"><div class="k">✈️ 进出港</div><div class="v">羽田进 <small>关西出</small></div></div>
+  <div class="fact"><div class="k">💴 人均预算</div><div class="v">¥11.4万<small>–18.6万</small></div></div>
+</div>
+
+<!-- 行程总表 -->
+<section class="sec">
+  <div class="sec-h"><div class="num">1</div><h2>完整行程总表</h2></div>
+  <div class="card">
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>日期</th><th>行程</th><th>主要交通</th><th>住宿</th></tr></thead>
+      <tbody>
+        <tr><td>10/3 周六</td><td>凌晨羽田抵达→酒店休息→增上寺、芝公园、芝给水所公园拍东京塔→二子玉川花火→惠比寿38层夜景</td><td>单轨电车、JR、地铁、东急田园都市线</td><td>东京</td></tr>
+        <tr><td>10/4 周日</td><td>东京→河口湖→大石公园→富士大石花园平台→2953 Oishi附近→湖边散步→东京</td><td>往返直达高速巴士＋河口湖红线巴士</td><td>东京</td></tr>
+        <tr><td>10/5 周一</td><td>可选银座晨间散步→10:00退房→东京站→新大阪→梅田酒店→道顿堀、心斋桥</td><td>Nozomi新干线＋大阪地铁</td><td>大阪</td></tr>
+        <tr><td>10/6 周二</td><td>大阪→京都→清水寺附近换和服→清水寺→三年坂→二年坂→八坂神社→祇园→大阪</td><td>JR新快速＋出租车/巴士</td><td>大阪</td></tr>
+        <tr><td>10/7 周三</td><td>大阪→京都→嵯峨岚山→竹林→天龙寺→渡月桥→大阪</td><td>JR，京都站换乘一次</td><td>大阪</td></tr>
+        <tr><td>10/8 周四</td><td>大阪站→关西机场→香港</td><td>HARUKA直达</td><td>—</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- 住宿 -->
+<section class="sec">
+  <div class="sec-h"><div class="num">2</div><h2>住宿位置与价格</h2></div>
+
+  <div class="card">
+    <h3>🏨 东京住宿 · 10/2 入住 — 10/5 退房（3晚）</h3>
+    <div class="warn"><b>重要：</b>即使 10/3 凌晨才到，也必须订 <b>10/2 晚</b>。否则清晨到酒店只能寄存行李，通常要等 15:00 才能进房。预订后联系酒店说明：</div>
+    <div class="quote">"My flight arrives after midnight. I expect to check in at around 6:30 a.m. on October 3. Please keep my reservation and do not mark it as a no-show."</div>
+
+    <h4>最推荐位置：东京站八重洲南口—京桥站—宝町站之间</h4>
+    <p class="muted">尽量选步行不超过 10 分钟到东京站的酒店。羽田过来只换一次车；10/4 可乘直达河口湖巴士；10/5 直接坐新干线；银座可步行；惠比寿回东京站 JR 直达。</p>
+
+    <div class="hotel"><div><div class="name">remm Tokyo Kyobashi</div><div class="loc">京桥站出口附近，东京站步行约8分钟</div></div><div class="price">¥18,000–28,000/晚</div></div>
+    <div class="hotel"><div><div class="name">Mitsui Garden Hotel Kyobashi</div><div class="loc">东京站八重洲侧，交通最方便</div></div><div class="price">¥22,000–35,000/晚</div></div>
+    <div class="hotel"><div><div class="name">karaksa hotel TOKYO STATION</div><div class="loc">靠近东京站，适合第一次到东京</div></div><div class="price">¥22,000–36,000/晚</div></div>
+    <div class="hotel"><div><div class="name">Hotel Intergate Tokyo Kyobashi</div><div class="loc">京桥、宝町之间，去银座方便</div></div><div class="price">¥17,000–28,000/晚</div></div>
+    <div class="hotel"><div><div class="name">京桥／八丁堀公寓式住宿</div><div class="loc">可能有洗衣机、空间较大</div></div><div class="price">¥15,000–26,000/晚</div></div>
+
+    <div class="note">东京3晚每间房约 <b>¥54,000–100,000</b>，两人平分约 <b>¥27,000–50,000/人</b>。不建议完全无人管理的私人民宿（凌晨入住不便）；公寓式酒店需确认：①前台24h有人 ②可凌晨/清晨入住 ③可寄存行李 ④无需异地取钥匙。</div>
+  </div>
+
+  <div class="card">
+    <h3>🏨 大阪住宿 · 10/5 入住 — 10/8 退房（3晚）</h3>
+    <h4>最推荐位置：JR大阪站／西梅田站／北新地站附近</h4>
+    <p class="muted">优先大阪站南侧或西侧，步行 5–10 分钟。新大阪一段JR到大阪站；JR新快速直达京都站；去岚山京都站换一次；御堂筋线直达道顿堀；10/8 HARUKA 直达关西机场。</p>
+
+    <div class="hotel"><div><div class="name">Hotel Intergate Osaka Umeda</div><div class="loc">靠近西梅田、大阪站，整体均衡</div></div><div class="price">¥17,000–27,000/晚</div></div>
+    <div class="hotel"><div><div class="name">Hotel Monterey Le Frere Osaka</div><div class="loc">北新地附近，去大阪站和地铁方便</div></div><div class="price">¥14,000–24,000/晚</div></div>
+    <div class="hotel"><div><div class="name">Hotel Hankyu RESPIRE OSAKA</div><div class="loc">大阪站旁边，位置最好但价格较高</div></div><div class="price">¥23,000–38,000/晚</div></div>
+    <div class="hotel"><div><div class="name">Hearton Hotel Nishi Umeda</div><div class="loc">大阪站西侧，价格通常稳定</div></div><div class="price">¥13,000–21,000/晚</div></div>
+    <div class="hotel"><div><div class="name">Villa Fontaine Grand Osaka Umeda</div><div class="loc">东梅田一带，晚上吃饭方便</div></div><div class="price">¥17,000–28,000/晚</div></div>
+
+    <div class="note">大阪3晚每间房约 <b>¥42,000–90,000</b>，两人平分约 <b>¥21,000–45,000/人</b>。价格随房型与取消政策变化，用于定预算，非锁定报价。</div>
+  </div>
+</section>
+
+<!-- 每日行程 -->
+<section class="sec">
+  <div class="sec-h"><div class="num">3</div><h2>每日详细行程</h2></div>
+  <div class="days" id="days">
+    <div class="day-btn active" data-day="d3">10/3 东京塔</div>
+    <div class="day-btn" data-day="d4">10/4 河口湖</div>
+    <div class="day-btn" data-day="d5">10/5 东京→大阪</div>
+    <div class="day-btn" data-day="d6">10/6 京都和服</div>
+    <div class="day-btn" data-day="d7">10/7 岚山</div>
+    <div class="day-btn" data-day="d8">10/8 回港</div>
+  </div>
+
+  <!-- 10/3 -->
+  <div class="card day-pane" id="d3">
+    <h3>10/3（周六）东京塔外景 ＋ 花火 ＋ 惠比寿夜景</h3>
+    <h4>🌙 凌晨机场交通（优先羽田，不建议成田）</h4>
+    <p class="muted">羽田T3凌晨抵达：通关取行李后在航站楼休息 → 约 05:10 后乘首班东京单轨 → 浜松町换JR山手线 → 东京站 → 步行到酒店。</p>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>路段</th><th>交通</th><th>换乘</th><th>时间</th><th>费用</th></tr></thead>
+      <tbody>
+        <tr><td>羽田T3→浜松町</td><td>东京单轨电车</td><td>0</td><td>约15分钟</td><td>—</td></tr>
+        <tr><td>浜松町→东京站</td><td>JR山手线/京滨东北线</td><td>1次</td><td>约7分钟</td><td>—</td></tr>
+        <tr><td>合计</td><td>单轨＋JR</td><td>1次</td><td>35–50分钟</td><td class="yen">优惠票¥590</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="note">2026/10/1–7 可用「单轨＋山手线内」优惠票，成人 ¥590。<a href="https://www.tokyo-monorail.co.jp/tickets/value/yamanote.html" target="_blank">东京单轨电车优惠票 ↗</a> 首班车按约 05:10–05:30 准备，出发前一个月再确认。</div>
+
+    <h4>🗼 当天路线</h4>
+    <div class="tl">
+      <div class="tl-item"><div class="t">06:00–07:00</div><div class="d">抵达东京酒店</div><div class="m">单轨电车＋JR</div></div>
+      <div class="tl-item"><div class="t">07:00–12:00</div><div class="d">房间休息（补觉）</div></div>
+      <div class="tl-item"><div class="t">12:00–13:00</div><div class="d">午餐（酒店附近）</div></div>
+      <div class="tl-item"><div class="t">13:00</div><div class="d">东京站→浜松町站</div><div class="m">JR山手线/京滨东北线直达</div></div>
+      <div class="tl-item"><div class="t">13:20–14:00</div><div class="d">增上寺拍照</div><div class="m">浜松町步行约15分钟</div></div>
+      <div class="tl-item"><div class="t">14:00–14:40</div><div class="d">芝公园拍东京塔（只拍外景不登塔）</div></div>
+      <div class="tl-item"><div class="t">14:40–15:10</div><div class="d">芝给水所公园</div></div>
+      <div class="tl-item"><div class="t">15:15</div><div class="d">赤羽桥站→青山一丁目站</div><div class="m">都营大江户线</div></div>
+      <div class="tl-item"><div class="t">15:35</div><div class="d">青山一丁目→二子玉川</div><div class="m">半藏门线直通东急田园都市线，全程只换一次</div></div>
+      <div class="tl-item"><div class="t">18:00–19:00</div><div class="d">🎆 多摩川花火大会</div></div>
+      <div class="tl-item"><div class="t">19:00–20:30</div><div class="d">散场、排队进站</div></div>
+      <div class="tl-item"><div class="t">20:30</div><div class="d">二子玉川→涩谷</div><div class="m">东急田园都市线直达</div></div>
+      <div class="tl-item"><div class="t">20:55</div><div class="d">涩谷→惠比寿</div><div class="m">JR山手线，一站</div></div>
+      <div class="tl-item"><div class="t">21:10–21:50</div><div class="d">惠比寿花园广场38层夜景（免费）</div></div>
+      <div class="tl-item"><div class="t">22:00</div><div class="d">惠比寿→东京站</div><div class="m">JR山手线直达</div></div>
+    </div>
+    <div class="note">当日交通预计约 <b>¥1,200–1,600/人</b>。</div>
+
+    <h4>🎆 花火门票</h4>
+    <p class="muted">2026 世田谷、川崎两岸花火大会确认 10/3 18:00–19:00 同时举行。<a href="https://www.city.kawasaki.jp/280/page/0000117559.html" target="_blank">川崎市官方公告 ↗</a></p>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>席位</th><th>参考价格</th></tr></thead>
+      <tbody>
+        <tr><td>单人椅子席</td><td class="yen">约¥6,500/人</td></tr>
+        <tr><td>双人椅子席</td><td class="yen">约¥14,000/2人</td></tr>
+        <tr><td>双人坐席</td><td class="yen">约¥15,000/2人</td></tr>
+        <tr><td>免费区域</td><td class="yen">¥0，但需更早到场</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="warn">一般销售已于 2026/7/26 开始，先到先得，尽快查余票！<a href="https://tamagawa-hanabi.com/2026/07/01/%E5%90%84%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%84%E3%81%9F%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82/" target="_blank">花火大会官方信息 ↗</a> 第一次去又凌晨抵达，建议买有料席减少抢位与久站。</div>
+  </div>
+
+  <!-- 10/4 -->
+  <div class="card day-pane" id="d4" style="display:none">
+    <h3>10/4（周日）河口湖一日游</h3>
+    <div class="ok">不安排山中湖——一天跑两湖会增加等车换乘，不符合轻松旅行。</div>
+    <h4>🏔️ 推荐路线</h4>
+    <div class="tl">
+      <div class="tl-item"><div class="t">06:30</div><div class="d">起床、早餐</div></div>
+      <div class="tl-item"><div class="t">07:10</div><div class="d">到东京站八重洲南口巴士站</div><div class="m">步行</div></div>
+      <div class="tl-item"><div class="t">07:30左右</div><div class="d">东京站→河口湖站</div><div class="m">直达高速巴士</div></div>
+      <div class="tl-item"><div class="t">09:30–10:00</div><div class="d">抵达河口湖站</div></div>
+      <div class="tl-item"><div class="t">10:00</div><div class="d">河口湖站→大石公园</div><div class="m">红线周游巴士</div></div>
+      <div class="tl-item"><div class="t">10:30–12:30</div><div class="d">大石公园、富士大石花园平台</div></div>
+      <div class="tl-item"><div class="t">12:30–13:30</div><div class="d">2953 Oishi／北浜莊附近午餐、拍照</div></div>
+      <div class="tl-item"><div class="t">13:30–15:00</div><div class="d">河口湖湖畔散步</div><div class="m">红线巴士＋步行</div></div>
+      <div class="tl-item"><div class="t">15:00–16:00</div><div class="d">可选：河口湖缆车</div><div class="m">红线巴士</div></div>
+      <div class="tl-item"><div class="t">16:00</div><div class="d">返回河口湖站</div><div class="m">红线巴士</div></div>
+      <div class="tl-item"><div class="t">16:30–17:30</div><div class="d">河口湖→东京站</div><div class="m">预约直达巴士</div></div>
+      <div class="tl-item"><div class="t">19:00–20:00</div><div class="d">抵达东京（堵车可能更晚）</div></div>
+    </div>
+    <h4>💴 费用</h4>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>项目</th><th>每人</th></tr></thead>
+      <tbody>
+        <tr><td>东京—河口湖往返高速巴士</td><td class="yen">¥4,400–5,000</td></tr>
+        <tr><td>河口湖当地巴士</td><td class="yen">¥1,500–2,000</td></tr>
+        <tr><td>缆车（可选）</td><td class="yen">约¥1,000</td></tr>
+        <tr><td>午餐</td><td class="yen">¥1,500–2,500</td></tr>
+        <tr><td><b>合计</b></td><td class="yen"><b>约¥7,400–10,500</b></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="warn">10/4 是周日可能堵车；去程回程都提前订座；<b>不要订最后一班</b>回东京的巴士，建议回程选 16:30–17:30 班次；返程后不再安排必须准时的付费项目。</div>
+    <p class="muted">东京／新宿到河口湖直达巴士单程通常约 ¥2,200，车程约 1h45m–2h 以上。<a href="https://highway-buses.jp/ticket/attention-qpack.php" target="_blank">高速巴士参考 ↗</a></p>
+  </div>
+
+  <!-- 10/5 -->
+  <div class="card day-pane" id="d5" style="display:none">
+    <h3>10/5（周一）东京 → 大阪</h3>
+    <h4>🛍️ 银座可选（不购物可取消）</h4>
+    <div class="tl">
+      <div class="tl-item"><div class="t">08:00</div><div class="d">早餐</div></div>
+      <div class="tl-item"><div class="t">08:30–09:20</div><div class="d">银座四丁目、和光钟楼、GINZA SIX外观</div></div>
+      <div class="tl-item"><div class="t">09:20–09:40</div><div class="d">回酒店</div></div>
+      <div class="tl-item"><div class="t">10:00</div><div class="d">退房</div></div>
+    </div>
+    <p class="muted">银座商店大多约 11:00 才开门，早上适合拍照、人少。</p>
+
+    <h4>🚄 东京到大阪</h4>
+    <div class="tl">
+      <div class="tl-item"><div class="t">10:00</div><div class="d">酒店退房</div></div>
+      <div class="tl-item"><div class="t">10:15–10:30</div><div class="d">到东京站</div><div class="m">步行</div></div>
+      <div class="tl-item"><div class="t">10:30–13:00</div><div class="d">东京→新大阪</div><div class="m">Nozomi指定席直达</div></div>
+      <div class="tl-item"><div class="t">13:30</div><div class="d">新大阪→大阪站</div><div class="m">JR京都线直达</div></div>
+      <div class="tl-item"><div class="t">14:00</div><div class="d">酒店寄存行李</div></div>
+      <div class="tl-item"><div class="t">15:00–17:30</div><div class="d">梅田、LUCUA、Grand Front</div></div>
+      <div class="tl-item"><div class="t">18:00</div><div class="d">梅田→心斋桥/难波</div><div class="m">大阪Metro御堂筋线直达</div></div>
+      <div class="tl-item"><div class="t">18:30–21:30</div><div class="d">心斋桥、道顿堀逛吃</div></div>
+      <div class="tl-item"><div class="t">22:00</div><div class="d">难波→梅田</div><div class="m">御堂筋线直达</div></div>
+    </div>
+    <h4>💴 费用</h4>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>项目</th><th>每人</th></tr></thead>
+      <tbody>
+        <tr><td>东京→新大阪 Nozomi指定席</td><td class="yen">约¥14,700–15,500</td></tr>
+        <tr><td>新大阪→大阪站</td><td class="yen">约¥180</td></tr>
+        <tr><td>大阪地铁</td><td class="yen">约¥500–800</td></tr>
+        <tr><td><b>合计</b></td><td class="yen"><b>约¥15,400–16,500</b></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="note">SmartEX 提前一年可预约，但提前一个月前属早期申请，列车/座位可能调整；正式指定席通常乘车日前一个月 10:00 开放。<a href="https://www.smart-ex.jp/reservation/useful/pre_time/" target="_blank">SmartEX预约说明 ↗</a> 行李长宽高超 160cm 需预约「特大行李空间」座位。</div>
+  </div>
+
+  <!-- 10/6 -->
+  <div class="card day-pane" id="d6" style="display:none">
+    <h3>10/6（周二）京都和服 · 东山</h3>
+    <h4>👘 交通和路线</h4>
+    <div class="tl">
+      <div class="tl-item"><div class="t">07:30</div><div class="d">大阪酒店出发</div><div class="m">步行到JR大阪站</div></div>
+      <div class="tl-item"><div class="t">08:00</div><div class="d">大阪站→京都站</div><div class="m">JR新快速直达，约30分钟</div></div>
+      <div class="tl-item"><div class="t">08:35</div><div class="d">京都站→清水寺附近和服店</div><div class="m">建议出租车</div></div>
+      <div class="tl-item"><div class="t">09:00–10:00</div><div class="d">选和服、穿衣、发型（已预约）</div></div>
+      <div class="tl-item"><div class="t">10:00–11:30</div><div class="d">清水寺</div><div class="m">步行</div></div>
+      <div class="tl-item"><div class="t">11:30–13:00</div><div class="d">三年坂、二年坂</div></div>
+      <div class="tl-item"><div class="t">13:00–14:00</div><div class="d">午餐（东山附近）</div></div>
+      <div class="tl-item"><div class="t">14:00–15:00</div><div class="d">八坂神社</div></div>
+      <div class="tl-item"><div class="t">15:00–16:30</div><div class="d">花见小路、祇园</div></div>
+      <div class="tl-item"><div class="t">16:30–17:00</div><div class="d">退还和服</div></div>
+      <div class="tl-item"><div class="t">17:30</div><div class="d">京都站→大阪站</div><div class="m">JR新快速直达</div></div>
+    </div>
+    <p class="muted">京都站到清水寺附近出租车约 ¥1,500–2,500/车，两人乘坐很合适，免在京都站研究公交。</p>
+
+    <h4>🏪 和服店（订清水寺店/东山店，勿订京都站店）</h4>
+    <div class="hotel"><div><div class="name">Rental Kimono Okamoto 清水/东山店</div><div class="loc">品牌成熟、款式多</div></div><div class="price">约¥4,980起</div></div>
+    <div class="hotel"><div><div class="name">Rika Wafuku 清水寺店</div><div class="loc">距离清水寺近</div></div><div class="price">约¥3,500起</div></div>
+    <div class="hotel"><div><div class="name">Tekuteku Kyoto 清水店</div><div class="loc">风格比较复古</div></div><div class="price">¥4,400–6,600</div></div>
+    <div class="hotel"><div><div class="name">Kanwa Kimono 清水/八坂店</div><div class="loc">提供中英文服务</div></div><div class="price">¥3,300起</div></div>
+    <p class="muted">冈本清水店营业约 09:00–18:00，和服选择及穿戴约需 1–1.5 小时。<a href="https://www.japan47go.travel/en/detail/5b038fe0-98b1-45ab-8029-022f6db59f64" target="_blank">京都观光官方资料 ↗</a></p>
+
+    <h4>💴 当天每人预计</h4>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>项目</th><th>费用</th></tr></thead>
+      <tbody>
+        <tr><td>大阪—京都往返</td><td class="yen">约¥1,160</td></tr>
+        <tr><td>京都出租车（两人平分）</td><td class="yen">约¥800–1,300</td></tr>
+        <tr><td>和服＋基础发型</td><td class="yen">¥4,000–7,000</td></tr>
+        <tr><td>清水寺</td><td class="yen">约¥500</td></tr>
+        <tr><td>午餐、饮料</td><td class="yen">¥2,000–3,500</td></tr>
+        <tr><td><b>合计</b></td><td class="yen"><b>约¥8,500–13,500</b></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- 10/7 -->
+  <div class="card day-pane" id="d7" style="display:none">
+    <h3>10/7（周三）京都岚山</h3>
+    <h4>🎋 路线</h4>
+    <div class="tl">
+      <div class="tl-item"><div class="t">07:45</div><div class="d">大阪酒店出发</div></div>
+      <div class="tl-item"><div class="t">08:00</div><div class="d">JR大阪站→京都站</div><div class="m">JR新快速直达</div></div>
+      <div class="tl-item"><div class="t">08:30</div><div class="d">京都站→嵯峨岚山站</div><div class="m">JR嵯峨野线</div></div>
+      <div class="tl-item"><div class="t">09:15</div><div class="d">抵达嵯峨岚山（共换乘一次）</div></div>
+      <div class="tl-item"><div class="t">09:30–10:30</div><div class="d">竹林小径</div></div>
+      <div class="tl-item"><div class="t">10:30–12:00</div><div class="d">天龙寺</div></div>
+      <div class="tl-item"><div class="t">12:00–13:30</div><div class="d">岚山午餐</div></div>
+      <div class="tl-item"><div class="t">13:30–15:00</div><div class="d">渡月桥、河边散步</div></div>
+      <div class="tl-item"><div class="t">15:00–16:00</div><div class="d">咖啡、购物</div></div>
+      <div class="tl-item"><div class="t">16:30</div><div class="d">嵯峨岚山→京都→大阪</div><div class="m">JR，换乘一次</div></div>
+    </div>
+    <div class="warn">不要增加叡山电车，否则从京都西边横穿到东北边，交通时间明显增加。</div>
+    <h4>💴 当天预计（每人）</h4>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>项目</th><th>每人</th></tr></thead>
+      <tbody>
+        <tr><td>大阪—嵯峨岚山往返</td><td class="yen">约¥2,000</td></tr>
+        <tr><td>天龙寺庭园等</td><td class="yen">约¥500–800</td></tr>
+        <tr><td>午餐、咖啡</td><td class="yen">¥2,000–4,000</td></tr>
+        <tr><td><b>合计</b></td><td class="yen"><b>约¥4,500–6,800</b></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- 10/8 -->
+  <div class="card day-pane" id="d8" style="display:none">
+    <h3>10/8（周四）大阪 → 关西机场 → 香港</h3>
+    <h4>⏰ 离开大阪酒店时间参考</h4>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>航班起飞时间</th><th>建议离开大阪酒店</th></tr></thead>
+      <tbody>
+        <tr><td>10:00</td><td>05:30左右</td></tr>
+        <tr><td>12:00</td><td>07:30左右</td></tr>
+        <tr><td>15:00</td><td>10:30左右</td></tr>
+        <tr><td>18:00</td><td>13:30左右</td></tr>
+        <tr><td>21:00</td><td>16:30左右</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="quote">JR大阪站 → HARUKA → 关西机场</div>
+    <div class="ok">直达不换车 · 约 45–55 分钟 · 外国游客优惠票约 ¥1,800 · 国际航班建议提前 3 小时到机场。</div>
+    <p class="muted">JR西日本 HARUKA 外国游客优惠票 大阪/新大阪至关西机场为 ¥1,800。<a href="https://www.westjr.co.jp/global/en/ticket/westqr/haruka/" target="_blank">JR西日本官方票价 ↗</a></p>
+  </div>
+</section>
+
+<!-- 预约清单 -->
+<section class="sec">
+  <div class="sec-h"><div class="num">4</div><h2>需要提前预约的清单</h2></div>
+
+  <div class="card">
+    <h3>🔥 现在就预约</h3>
+    <div class="legend"><span><span class="dot r"></span>很高</span><span><span class="dot o"></span>高</span></div>
+    <div class="chk"><span class="dot r"></span><div class="ct"><div class="ti">东京酒店（10/2–5）</div><div class="de">花火大会周末 + 涉及凌晨入住</div></div><span class="lvl high">很高</span></div>
+    <div class="chk"><span class="dot o"></span><div class="ct"><div class="ti">大阪酒店（10/5–8）</div><div class="de">订可取消房型更稳妥</div></div><span class="lvl high">高</span></div>
+    <div class="chk"><span class="dot r"></span><div class="ct"><div class="ti">花火有料席（10/3）</div><div class="de">一般销售已开始，先到先得</div></div><span class="lvl high">很高</span></div>
+    <div class="chk"><span class="dot o"></span><div class="ct"><div class="ti">京都和服（10/6 09:00）</div><div class="de">预约清水寺/东山店最早时段</div></div><span class="lvl high">高</span></div>
+    <div class="chk"><span class="dot r"></span><div class="ct"><div class="ti">香港往返机票（10/3、8）</div><div class="de">优先羽田进、关西机场出</div></div><span class="lvl high">很高</span></div>
+  </div>
+
+  <div class="card">
+    <h3>📅 开放后立即预约</h3>
+    <div class="chk"><span class="dot o"></span><div class="ct"><div class="ti">东京→河口湖高速巴士</div><div class="de">9月初开始关注，建议设9/4提醒</div></div></div>
+    <div class="chk"><span class="dot o"></span><div class="ct"><div class="ti">河口湖→东京高速巴士</div><div class="de">与去程同时订，不要订最后一班</div></div></div>
+    <div class="chk"><span class="dot o"></span><div class="ct"><div class="ti">东京→新大阪新干线</div><div class="de">现在SmartEX提前申请，或9/5正式选座，建议指定席</div></div></div>
+    <div class="chk"><span class="dot m"></span><div class="ct"><div class="ti">HARUKA机场票</div><div class="de">出发前1–2周，不必现在抢</div></div></div>
+    <div class="chk"><span class="dot m"></span><div class="ct"><div class="ti">eSIM/日本上网卡</div><div class="de">出发前1周，Google Maps导航需稳定网络</div></div></div>
+  </div>
+
+  <div class="card">
+    <h3>🆓 不需要预约</h3>
+    <div class="chk"><span class="dot g"></span><div class="ct"><div class="ti">芝公园、增上寺外景 / 芝给水所公园</div><div class="de">免费，现场前往</div></div></div>
+    <div class="chk"><span class="dot g"></span><div class="ct"><div class="ti">惠比寿花园广场38层</div><div class="de">免费，现场进入</div></div></div>
+    <div class="chk"><span class="dot g"></span><div class="ct"><div class="ti">大石公园 / 河口湖红线巴士</div><div class="de">免费 / 通常现场排队</div></div></div>
+    <div class="chk"><span class="dot g"></span><div class="ct"><div class="ti">清水寺普通参观 / 三年坂二年坂八坂神社祇园</div><div class="de">现场购票 / 无需预约</div></div></div>
+    <div class="chk"><span class="dot g"></span><div class="ct"><div class="ti">岚山竹林、渡月桥 / 大阪道顿堀心斋桥</div><div class="de">免费 / 无需预约</div></div></div>
+  </div>
+</section>
+
+<!-- 预算 -->
+<section class="sec">
+  <div class="sec-h"><div class="num">5</div><h2>总预算（每人）</h2></div>
+  <div class="card">
+    <div class="budget-total">
+      <div class="big">¥114,000 – 186,000</div>
+      <div class="lbl">不含香港往返机票及购物 · 两人同行两人一间</div>
+    </div>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>项目</th><th>每人预算</th></tr></thead>
+      <tbody>
+        <tr><td>东京住宿3晚</td><td class="yen">¥27,000–50,000</td></tr>
+        <tr><td>大阪住宿3晚</td><td class="yen">¥21,000–45,000</td></tr>
+        <tr><td>羽田→东京</td><td class="yen">约¥590</td></tr>
+        <tr><td>东京市内交通</td><td class="yen">¥2,000–3,000</td></tr>
+        <tr><td>花火有料席（可选）</td><td class="yen">¥6,500–7,500</td></tr>
+        <tr><td>河口湖交通＋可选缆车</td><td class="yen">¥6,000–8,000</td></tr>
+        <tr><td>东京→新大阪</td><td class="yen">¥14,700–15,500</td></tr>
+        <tr><td>大阪、京都市内交通</td><td class="yen">¥5,000–7,000</td></tr>
+        <tr><td>和服＋景点</td><td class="yen">¥5,000–8,000</td></tr>
+        <tr><td>6天餐饮</td><td class="yen">¥24,000–40,000</td></tr>
+        <tr><td>大阪→关西机场</td><td class="yen">约¥1,800</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="note">省着花（免费花火区＋普通商务酒店＋普通餐厅）可压到约 <b>¥115,000–140,000/人</b>；住更好酒店、买有料花火席、吃较好餐厅则建议准备约 <b>¥160,000–190,000/人</b>。</div>
+  </div>
+</section>
+
+<div class="footer">
+  🗾 2026 国庆 东京⇄大阪 7日游攻略 · 价格随汇率与政策变动，仅供参考<br>
+  祝旅途愉快 🎉
+</div>
+
+<button class="fab" onclick="openShare()">🔗 分享给好友</button>
+
+<div class="share-sheet" id="shareSheet">
+  <div class="sheet-box">
+    <h3>分享这份攻略</h3>
+    <div class="desc">复制到微信发给朋友，或保存链接随时查看 👇</div>
+    <div class="share-row">
+      <div class="share-opt" onclick="copyLink()"><div class="ic">📋</div>复制链接</div>
+      <div class="share-opt" onclick="shareWX()"><div class="ic">💬</div>微信好友</div>
+      <div class="share-opt" onclick="saveLocal()"><div class="ic">⭐</div>存本地</div>
+    </div>
+    <div class="link-box">
+      <input id="linkInput" readonly value="">
+      <button class="copy-btn" onclick="copyLink()">复制</button>
+    </div>
+    <p class="muted" style="font-size:12px;margin:10px 0 0">💡 微信内打开后，点右上角「···」即可转发给朋友或分享到朋友圈。</p>
+    <button class="close-sheet" onclick="closeShare()">关闭</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  // 天数切换
+  document.querySelectorAll('.day-btn').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.day-btn').forEach(x=>x.classList.remove('active'));
+      b.classList.add('active');
+      document.querySelectorAll('.day-pane').forEach(p=>p.style.display='none');
+      document.getElementById(b.dataset.day).style.display='block';
+      window.scrollTo({top:document.getElementById(b.dataset.day).offsetTop-10,behavior:'smooth'});
+    });
+  });
+
+  // 分享
+  var pageUrl = location.href;
+  document.getElementById('linkInput').value = pageUrl;
+
+  function openShare(){document.getElementById('shareSheet').classList.add('open');}
+  function closeShare(){document.getElementById('shareSheet').classList.remove('open');}
+  document.getElementById('shareSheet').addEventListener('click',function(e){if(e.target===this)closeShare();});
+
+  function showToast(msg){
+    var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');
+    setTimeout(function(){t.classList.remove('show');},1800);
+  }
+  function copyLink(){
+    var inp=document.getElementById('linkInput');inp.select();inp.setSelectionRange(0,99999);
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(pageUrl).then(function(){showToast('链接已复制 ✓');}).catch(function(){fallbackCopy();});
+    }else{fallbackCopy();}
+    function fallbackCopy(){try{document.execCommand('copy');showToast('链接已复制 ✓');}catch(e){showToast('请长按链接手动复制');}}
+  }
+  function shareWX(){
+    if(navigator.share){
+      navigator.share({title:'2026国庆 东京⇄大阪7日游攻略',text:'超详细行程+预算',url:pageUrl}).catch(function(){});
+    }else{
+      showToast('点右上角「···」转发给微信好友');
+    }
+  }
+  function saveLocal(){
+    showToast('已可收藏，微信内点「···」收藏');
+  }
+</script>
+</body>
+</html>
